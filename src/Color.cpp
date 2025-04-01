@@ -1,8 +1,8 @@
 #pragma once
 
-#include "color.h"
+#include "Color.h"
 
-color::color(size_t r, size_t g, size_t b)
+color::color(uchar r, uchar g, uchar b)
 	: r{r},
 	g{g},
 	b{b}

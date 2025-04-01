@@ -10,6 +10,6 @@ public:
 	uchar b;
 
 	color();
-	color(size_t r, size_t g, size_t b);
+	color(uchar r, uchar g, uchar b);
 };
 

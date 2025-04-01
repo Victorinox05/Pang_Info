@@ -59,7 +59,7 @@ void Mundo::inicializa()
 
 	esfera1.posicion = { 2.0,4.0 };
 	esfera1.radio = 1.5;
-	esfera1.color = { 0,0,255 };
+	esfera1.Color = { 0,0,0 };
 
 	bono.posicion = { 5.0,5.0 };
 
