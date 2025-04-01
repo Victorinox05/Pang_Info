@@ -19,11 +19,19 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="bonus.cpp" />
+    <ClCompile Include="src\Color.cpp" />
+    <ClCompile Include="src\esfera.cpp" />
     <ClCompile Include="src\mundo.cpp" />
     <ClCompile Include="src\pang.cpp" />
+    <ClCompile Include="src\vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\bonus.h" />
+    <ClInclude Include="src\Color.h" />
+    <ClInclude Include="src\esfera.h" />
     <ClInclude Include="src\mundo.h" />
+    <ClInclude Include="src\vector2D.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
