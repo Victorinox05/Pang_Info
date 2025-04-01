@@ -2,7 +2,7 @@
 
 typedef unsigned char uchar;
 
-class color //Al ser struct, todos los miembros son públicos por defecto
+class color 
 {
 public:
 	uchar r;

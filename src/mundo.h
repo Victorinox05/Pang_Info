@@ -1,19 +1,19 @@
 #pragma once
 
-//#include "caja.h"
-//#include "hombre.h"
+#include "caja.h"
+#include "hombre.h"
 #include "esfera.h"
 #include "bonus.h"
-//#include "disparo.h" 
+#include "disparo.h"
 
 class Mundo
 {
 public:
-	//caja caja1;
-	//hombre jugador;
+	caja caja1;
+	hombre jugador;
 	Esfera esfera1;
 	bonus bono;
-	//disparo disparo1;
+	disparo disparo1;
 	//pared plataforma;
 
 	void tecla(unsigned char key);

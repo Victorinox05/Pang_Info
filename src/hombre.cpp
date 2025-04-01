@@ -1,17 +1,18 @@
 #pragma once
 
-#include "esfera.h"
+#include "hombre.h"
 #include "freeglut.h"
 
-void Esfera::dibuja() {
-	glColor3ub(Color.r, Color.g, Color.b);
+void hombre::dibuja()
+{
 	glPushMatrix();
 	glTranslated(posicion.x, posicion.y, 0);
-	glutSolidSphere(radio, 20, 20);
+	glColor3d(1.0f, 0.0f, 0.0f);
+	glutSolidSphere(altura, 20, 20);
 	glPopMatrix();
 }
 
-void Esfera::mueve(float t)
+void hombre::mueve(float t)
 {
 	posicion.x = posicion.x + velocidad.x * t + 0.5 * aceleracion.x * t * t;
 	posicion.y = posicion.y + velocidad.y * t + 0.5 * aceleracion.y * t * t;

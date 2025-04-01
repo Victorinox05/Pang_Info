@@ -20,17 +20,25 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bonus.cpp" />
+    <ClCompile Include="src\caja.cpp" />
     <ClCompile Include="src\Color.cpp" />
+    <ClCompile Include="src\disparo.cpp" />
     <ClCompile Include="src\esfera.cpp" />
+    <ClCompile Include="src\hombre.cpp" />
     <ClCompile Include="src\mundo.cpp" />
     <ClCompile Include="src\pang.cpp" />
+    <ClCompile Include="src\pared.cpp" />
     <ClCompile Include="src\vector2D.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\bonus.h" />
+    <ClInclude Include="src\caja.h" />
     <ClInclude Include="src\Color.h" />
+    <ClInclude Include="src\disparo.h" />
     <ClInclude Include="src\esfera.h" />
+    <ClInclude Include="src\hombre.h" />
     <ClInclude Include="src\mundo.h" />
+    <ClInclude Include="src\pared.h" />
     <ClInclude Include="src\vector2D.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
