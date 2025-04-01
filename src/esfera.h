@@ -12,7 +12,7 @@ public:
 	vector2D aceleracion{ 0.0,-9.8 };
 	color color;
 
-	void dibuja(); //Funcion de dibujar la esfera
+	void dibuja(); //Funcion de dibujar
 	void mueve(float t);
 };
 
