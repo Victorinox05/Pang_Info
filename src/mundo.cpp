@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Mundo.h"
+#include "mundo.h"
 #include "freeglut.h"
 #include <cmath>
 
@@ -19,6 +19,16 @@ void Mundo::dibuja()
 		0.0, 1.0, 0.0);      // definimos hacia arriba (eje Y)    
 
 	//aqui es donde hay que poner el codigo de dibujo
+	glDisable(GL_LIGHTING);
+	glBegin(GL_POLYGON);
+	glColor3ub(255, 0, 0);
+	glVertex3d(-5.0, 0, -5.0);
+	glVertex3d(-5.0, 0, 5.0);
+	glColor3ub(255, 255, 0);
+	glVertex3d(5.0, 0, 5.0);
+	glVertex3d(5.0, 0, -5.0);
+	glEnd();
+	glEnable(GL_LIGHTING);
 
 	caja1.dibuja();
 	jugador.dibuja();
@@ -26,7 +36,6 @@ void Mundo::dibuja()
 	bono.dibuja();
 	disparo1.dibuja();
 	//plataforma.dibuja();
-
 }
 
 void Mundo::mueve()

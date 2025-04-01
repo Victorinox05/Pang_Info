@@ -1,7 +1,7 @@
 #pragma once
 
 #include "vector2D.h"
-#include "color.h"
+#include "Color.h"
 
 class pared
 {

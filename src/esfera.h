@@ -12,6 +12,7 @@ public:
 	vector2D aceleracion{ 0.0,-9.8 };
 	color Color;
 
+public:
 	void dibuja(); //Funcion de dibujar
 	void mueve(float t);
 };

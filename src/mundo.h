@@ -14,7 +14,7 @@ public:
 	Esfera esfera1;
 	bonus bono;
 	disparo disparo1;
-	//pared plataforma;
+	//pared plataforma; //Error al descomentar
 
 	void tecla(unsigned char key);
 	void inicializa();
