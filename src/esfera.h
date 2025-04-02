@@ -17,6 +17,6 @@ public:
 	void mueve(float t);
 	void setColor(const color& col);
 	void setRadio(double radio);
-	void setPos(const vector2D& pos); //Por que const???
+	void setPos(const vector2D& pos); //Por que const
 };
 
