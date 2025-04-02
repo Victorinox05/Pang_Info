@@ -53,7 +53,7 @@ void Mundo::inicializa()
 
 	disparo1.posicion = { -5.0,0.0 };
 
-	plataforma.Color = { 0,0,255 };
+	plataforma.setColor({ 0,0,255 });
 	plataforma.limite1 = { -5.0,9.0 };
 	plataforma.limite2 = { 5.0,9.0 };
 }

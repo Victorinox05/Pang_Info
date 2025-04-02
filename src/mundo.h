@@ -14,8 +14,7 @@ public:
 	Esfera esfera1;
 	bonus bono;
 	disparo disparo1;
-	pared plataforma; //Error al descomentar
-
+	pared plataforma; //{{0,0,0}, {-5,0,9.0}, {5.0,9.0} }; //Error al descomentar
 	void tecla(unsigned char key);
 	void inicializa();
 	void rotarOjo();
