@@ -5,7 +5,7 @@
 
 class Esfera
 {
-public:
+private:
 	double radio;
 	vector2D posicion;
 	vector2D velocidad;
@@ -15,5 +15,8 @@ public:
 public:
 	void dibuja(); //Funcion de dibujar
 	void mueve(float t);
+	void setColor(const color& col);
+	void setRadio(double radio);
+	void setPos(const vector2D& pos); //Por que const???
 };
 

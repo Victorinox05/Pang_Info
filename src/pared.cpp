@@ -9,6 +9,12 @@ pared::pared(const color col,const vector2D lim1, const vector2D lim2)
 
 }
 
+pared::pared()
+	:Color{0,0,0}, limite1{0,0}, limite2(0,0)
+{
+
+}
+
 void pared::dibuja()
 {
 	glDisable(GL_LIGHTING);

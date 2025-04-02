@@ -18,3 +18,18 @@ void Esfera::mueve(float t)
 	velocidad.x = velocidad.x + aceleracion.x * t;
 	velocidad.y = velocidad.y + aceleracion.y * t;
 }
+
+void Esfera::setColor(const color& col)
+{
+	this->Color = col;
+}
+
+void Esfera::setRadio(double r)
+{
+	this->radio = r;
+}
+
+void Esfera::setPos(const vector2D& pos)
+{
+	this->posicion = pos;
+}
