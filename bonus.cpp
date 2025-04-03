@@ -4,6 +4,15 @@
 #include "freeglut.h"
 #include <cstdlib>
 
+bonus::bonus()
+	:lado(2.0),
+	posicion(0,0),
+	velocidad(0,0),
+	aceleracion(0,-9.8)
+{
+
+}
+
 void bonus::dibuja()
 {
 	glPushMatrix(); //guarda el sistema de referencia actual

@@ -10,6 +10,8 @@ public:
 	vector2D aceleracion;
 
 public:
+
+	bonus();
 	void dibuja();
 	void mueve(float t);
 };

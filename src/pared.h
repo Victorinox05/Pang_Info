@@ -12,7 +12,7 @@ public:
 	vector2D limite2;
 
 	pared();
-	pared(const color col,const vector2D lim1, const vector2D lim2);
+	pared(const color& col,const vector2D& lim1, const vector2D& lim2);
 	void dibuja();
 	void setColor(const color& col);
 };

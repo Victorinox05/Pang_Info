@@ -3,7 +3,7 @@
 #include "pared.h"
 #include "freeglut.h"
 
-pared::pared(const color col,const vector2D lim1, const vector2D lim2)
+pared::pared(const color& col, const vector2D& lim1, const vector2D& lim2)
 	: Color(col), limite1(lim1), limite2(lim2)
 {
 

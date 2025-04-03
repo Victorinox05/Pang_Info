@@ -13,25 +13,18 @@ disparo::disparo()
 
 }
 
-
-
 void disparo::dibuja() {
 
     // Dibuja la estela
-    // Desactiva la iluminación para que el color se aplique directamente
-    glDisable(GL_LIGHTING);
-    // Ajusta el grosor de la línea de la estela
-    glLineWidth(2.0);
-    // Define un color para la estela
+    glLineWidth(4.0);
     glColor3ub(255, 0, 0);
-    // Dibuja una línea desde el origen hasta la posición actual
     glBegin(GL_LINES);
     glVertex2f(origen.x, origen.y);
+	glColor3ub(255, 255, 255);
     glVertex2f(posicion.x, posicion.y);
     glEnd();
-    // Reactiva la iluminación si la usas para otros elementos
-    glEnable(GL_LIGHTING);
 
+	//Dibuja el disparo
 	glColor3d(0.0, 1.0, 1.0);
 	glPushMatrix();
 	glTranslated(posicion.x, posicion.y, 0);
