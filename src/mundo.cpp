@@ -52,6 +52,7 @@ void Mundo::inicializa()
 	bono.posicion = { 5.0,5.0 };
 
 	disparo1.posicion = { -5.0,0.0 };
+	disparo1.origen = disparo1.posicion;
 
 	plataforma.setColor({ 0,0,255 });
 	plataforma.limite1 = { -5.0,9.0 };

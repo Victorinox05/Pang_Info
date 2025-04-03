@@ -5,13 +5,14 @@
 class disparo
 {
 public:
-	float origen;
-	float radio = 0.25;
-	vector2D posicion{};
-	vector2D velocidad{};
-	vector2D aceleracion{ 0,5 };
+	float radio;
+	vector2D posicion;
+	vector2D velocidad;
+	vector2D aceleracion;
+	vector2D origen;
 
 public:
+	disparo();
 	void dibuja();
 	void mueve(float t);
 };

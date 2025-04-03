@@ -3,7 +3,35 @@
 #include "freeglut.h"
 #include "disparo.h"
 
+disparo::disparo()
+	: radio(0.25),
+	posicion(0,0),
+	velocidad(0,0),
+	aceleracion(0,5),
+	origen(posicion) //Inicializar origen con la posicion inicial
+{
+
+}
+
+
+
 void disparo::dibuja() {
+
+    // Dibuja la estela
+    // Desactiva la iluminación para que el color se aplique directamente
+    glDisable(GL_LIGHTING);
+    // Ajusta el grosor de la línea de la estela
+    glLineWidth(2.0);
+    // Define un color para la estela
+    glColor3ub(255, 0, 0);
+    // Dibuja una línea desde el origen hasta la posición actual
+    glBegin(GL_LINES);
+    glVertex2f(origen.x, origen.y);
+    glVertex2f(posicion.x, posicion.y);
+    glEnd();
+    // Reactiva la iluminación si la usas para otros elementos
+    glEnable(GL_LIGHTING);
+
 	glColor3d(0.0, 1.0, 1.0);
 	glPushMatrix();
 	glTranslated(posicion.x, posicion.y, 0);
